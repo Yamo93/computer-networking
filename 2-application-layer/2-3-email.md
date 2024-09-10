@@ -1,7 +1,7 @@
 # Email
 ## Email Delays
 
-> 3 RTTs from client contacting an email server via TCP to when the client can begin sending the email message after initial TCP and SMTP handshaking.
+> **3 RTTs** are required from client contacting an email server via TCP to when the client can begin sending the email message after initial TCP and SMTP handshaking.
 
 ### HTTP Characteristics
 * Uses a blank line (CRLF) to indicate end of request header.
