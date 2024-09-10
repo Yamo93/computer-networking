@@ -38,7 +38,7 @@ local host
     |
 local DNS server
     |
-root - TLS - authoritative
+root - TLD - authoritative
 ```
 
 And the following assumptions:
