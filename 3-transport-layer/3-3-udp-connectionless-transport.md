@@ -15,6 +15,7 @@
 
 ## Internet Checksum and UDP
 **Q:** Over what set of bytes is the checksum field in the UDP header computed over?
+
 **A:** The entire UDP segment, except the checksum field itself, and the IP sender and receive address fields
 
 ## Checksum Characteristics
@@ -62,3 +63,10 @@ Then, we compute the checksum by inverting the sum:
 ```
  01010110 11100111
 ```
+
+---
+## UDP Checksum: How Good Is It?
+
+> **True:** When computing the Internet checksum for two numbers, a single flipped bit (i.e., in just one of the two numbers) will always result in a changed checksum.
+
+> **False:** When computing the Internet checksum for two numbers, a single flipped bit in each of the two numbers will always result in a changed checksum.
