@@ -3,7 +3,7 @@
 ## Difference between congestion control and flow control
 Flow control = single sender sends too much data.
 
-Congestion controls = multiple senders send too much data.
+Congestion control = multiple senders send too much data.
 
 ## Two congested senders.
 Consider the figure below, which shows the application-to-application throughput achieved when two senders are competing at a shared bottleneck link.  Suppose that when the overall arrival rate,  lambdain' (for each sender) is close to R/2, the throughput to the application layer (at each receiver), lambdaout, is equal to 0.8 *  lambdain'.
