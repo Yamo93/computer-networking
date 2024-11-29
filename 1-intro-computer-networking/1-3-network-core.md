@@ -29,3 +29,13 @@ Answer:
 * Each user generates traffic at an average rate of 2.1 Mbps, generating traffic at a rate of 15 Mbps when transmitting => Neither works well.
 * Average rate of 2 Mbps, 2Mbps traffic when transmitting => circuit switching
 * Average rate of 0.21 Mbps, 15 Mbps traffic when transmitting => packet switching
+
+Example:
+1 Gb/s link
+each user: 100 Mb/s when active, active 10% of time
+Q: How many users can use this network under circuit switching and packet switching?
+A:
+Circuit switching: 10 users.
+Packet switching: with 35 userse, probability > 10 active at same time is less than .0004.
+
+Packet switching is good for "bursty" data - sometimes has data to send, but at other times not.
