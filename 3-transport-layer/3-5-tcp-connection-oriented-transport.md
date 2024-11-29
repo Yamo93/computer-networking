@@ -25,14 +25,14 @@ ACK number field = This field contains the index in the byte stream of the next 
 ## TCP sequence numbers and ACKs (1).
 Q: Consider the TCP Telnet scenario below (from Fig. 3.31 in text). Why is it that the receiver sends an ACK that is one larger than the sequence number in the received datagram?
 
-![alt text](3-5-seq-nos-and-acks-1.png)
+![seq nos and acks](img/3-5-seq-nos-and-acks-1.png)
 
 A: Because the send-to receiver segment carries only one byte of data, and after that segment is received, the next expected byte of data is just the next byte (i.e., has an index that is one larger) in the data stream.
 
 ## TCP sequence numbers and ACKs (2).
 Suppose that as shown in the figure below, a TCP sender is sending segments with 100 bytes of payload.  The TCP sender sends five segments with sequence numbers 100, 200, 300, 400, and 500.  Suppose that the segment with sequence number 300 is lost.  The TCP receiver will buffer correctly-received but not-yet-in-order segments for later delivery to the application layer (once missing segments are later received). 
 
-![alt text](3-5-packet-loss.png)
+![packet loss](img/3-5-packet-loss.png)
 
 After receiving segment 100, the receiver responds with an ACK with value: 200
 
@@ -55,7 +55,7 @@ A: False.
 ## TCP timer management.
 Consider the TCP Telnet scenario below (from Fig. 3.36 in text). What timer-related action does the sender take on the receipt of ACK 120?
 
-![alt text](3-5-lost-ack.png)
+![lost ack](img/3-5-lost-ack.png)
 
 ( ) Restarts a timer for the segment with sequence number 92.
 
@@ -84,7 +84,7 @@ RESET = A general purpose error message used during connection set up or tear do
 ## TCP Fast Retransmit.
 Consider TCP’s Fast Retransmit optimization (see Figure 3.37 from the text, below).  Of course, the sender doesn't know for sure that the segment with sequence # 100 is actually lost (it can’t see into the channel). Can a sender get three duplicate ACKs for a segment that in fact has not been lost? Which of the following statements are true?  Suppose a channel can lose, but will not corrupt, messages.
 
-![fast retransmit](3-5-fast-retransmit.png)
+![fast retransmit](img/3-5-fast-retransmit.png)
 
 (x) If the channel cannot reorder messages, a triple duplicate ACK indicates to the sender that a segment loss has happened for sure. Actually (again assuming the channel cannot corrupt or reorder messages), even a single duplicate ACK would indicate that a segment loss has happed for sure.
 
