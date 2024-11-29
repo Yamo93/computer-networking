@@ -2,7 +2,7 @@
 ## Transport Layer Demultiplexing
 **Transport layer demultiplexing** = Receiving a transport-layer segment from the network layer, extracting the payload (data) and delivering the data to the correct socket.
 
-**Transport layer multiplexing** = Taking data from one socket (one of possibly many sockets), encapsulating a data chuck with header information – thereby creating a transport layer segment – and eventually passing this segment to the network layer.
+**Transport layer multiplexing** = Taking data from one socket (one of possibly many sockets), encapsulating a data chunk with header information – thereby creating a transport layer segment – and eventually passing this segment to the network layer.
 
 ---
 

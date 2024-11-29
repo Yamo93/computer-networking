@@ -19,5 +19,5 @@
 
 ### Email Protocols
 * SMTP pushes email from a mail client to a mail server.
-* IMAP pulls email to a mail client from a mail server.
+* IMAP pulls email from a mail server to a mail client.
 * Neither SMTP nor IMAP pulls mail from one mail server to another mail server.

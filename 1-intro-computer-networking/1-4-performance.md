@@ -2,7 +2,7 @@
 
 ## Packet delays
 1. Processing delay: time needed to perform an integrity check, lookup packet information in a local table and move the packet from an input link to an output link in a router.
-2. Queuing delay: time spend waiting in packet buffers for link transmission.
+2. Queuing delay: time spent waiting in packet buffers for link transmission.
 3. Transmission delay: time spent transmitting packet bits into the link.
 4. Propagation delay: time needed for bits to physically propagate through the transmission medium from end one of a link to the other.
 
@@ -26,6 +26,7 @@ L/R = 0.000012 secs
 Given a link of length 1 000 km, and a propagation speed of 30x10^8 m/sec, then:
 
 d = 1 000 000
+
 s = 300 000 000
 
 d / s = 1 000 000 / 300 000 000 = 1 / 300 = 0.0033s
