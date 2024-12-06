@@ -53,6 +53,8 @@ What is the maximum # of interfaces in the 223.1.2/24 network?
 - [ ] Two hosts, as shown in the figure.
 - [x] 256
 
+Explanation: IP address has 32 bits. 32 - 24 = 8. There are 8 bits remaining. Therefore the maximum # of interfaces is: 2^8 = 256. Even though the maximum of usable interfaces is 254 (excluding the home address 0.0.0.0 and the broadcast address 255.255.255.255 which are reserved).
+
 What is the maximum # of interfaces in the 223.1.3/29 network?
 
 - [ ] There's no a priori limit on the number of interfaces in this subnet.
@@ -61,6 +63,8 @@ What is the maximum # of interfaces in the 223.1.3/29 network?
 - [x] 8
 - [ ] 128
 
+Explanation: IP address has 32 bits. 32 - 29 = 3. Therefore the maximum # of interfaces is: 2^3 = 8. 
+
 Which of the following addresses can _not_ be used by an interface in the 223.1.3/29 network? Check all that apply.
 
 - [x] 223.1.2.6
@@ -68,6 +72,8 @@ Which of the following addresses can _not_ be used by an interface in the 223.1.
 - [ ] 223.1.3.6
 - [x] 223.1.3.28
 - [x] 223.1.3.16
+
+Explanation: IP address has 32 bits. 32 - 29 = 3. The maximum # of interfaces is: 2^3 = 8. Therefore, the maximum IP address for the subnet would be 223.1.3.8. This would exclude 223.1.2.6, since it is outside of the subnet 223.1.3/29. It would also exclude 223.1.3.28 and 223.1.3.16 because both have a greater host value than 8 (the last bits that are reserved for hosts).
 
 ## Plug-and-play.
 What is meant by saying that DHCP is a "plug and play" protocol?
