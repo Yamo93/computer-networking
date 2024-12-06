@@ -51,7 +51,7 @@ What is the maximum # of interfaces in the 223.1.2/24 network?
 - [ ] 128
 - [ ] There's no a priori limit on the number of interfaces in this subnet.
 - [ ] Two hosts, as shown in the figure.
-- [ ] 256
+- [x] 256
 
 What is the maximum # of interfaces in the 223.1.3/29 network?
 
